@@ -1,0 +1,359 @@
+<?xml version="1.0" ?>
+<mapping>
+	<map>
+		<framework name="layer_128_1_conv2" out_port_id="layer_128_1_conv2"/>
+		<IR id="30" name="layer_128_1_conv2" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_128_1_relu1" out_port_id="layer_128_1_bn1_h"/>
+		<IR id="23" name="layer_128_1_relu1" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="layer_128_1_relu2" out_port_id="layer_128_1_conv1_h"/>
+		<IR id="28" name="layer_128_1_relu2" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="layer_128_1_scale1_h" out_port_id="layer_128_1_bn1_h"/>
+		<IR id="22" name="layer_128_1_bn1_h/variance/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_256_1_sum" out_port_id="layer_256_1_sum"/>
+		<IR id="60" name="layer_256_1_sum" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="data" out_port_id="data"/>
+		<IR id="0" name="data" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="last_scale_h" out_port_id="layer_512_1_sum"/>
+		<IR id="79" name="last_bn_h/variance/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv7_2_mbox_conf_flat" out_port_id="conv7_2_mbox_conf_flat"/>
+		<IR id="193" name="conv7_2_mbox_conf_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv9_2_mbox_priorbox" out_port_id="conv9_2_mbox_priorbox"/>
+		<IR id="317" name="conv9_2_mbox_priorbox" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv7_2_mbox_loc" out_port_id="conv7_2_mbox_loc"/>
+		<IR id="120" name="conv7_2_mbox_loc" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv9_2_h" out_port_id="conv9_2_h"/>
+		<IR id="151" name="conv9_2_h" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv7_2_mbox_priorbox" out_port_id="conv7_2_mbox_priorbox"/>
+		<IR id="283" name="conv7_2_mbox_priorbox" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_512_1_scale1" out_port_id="layer_512_1_bn1"/>
+		<IR id="64" name="layer_512_1_bn1/variance/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_256_1_conv2" out_port_id="layer_256_1_conv2"/>
+		<IR id="57" name="layer_256_1_conv2" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_256_1_conv_expand" out_port_id="layer_256_1_conv_expand"/>
+		<IR id="59" name="layer_256_1_conv_expand" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="mbox_loc" out_port_id="mbox_loc"/>
+		<IR id="161" name="mbox_loc" out_port_id="6"/>
+	</map>
+	<map>
+		<framework name="conv6_2_mbox_loc" out_port_id="conv6_2_mbox_loc"/>
+		<IR id="102" name="conv6_2_mbox_loc" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_256_1_relu2" out_port_id="layer_256_1_conv1"/>
+		<IR id="55" name="layer_256_1_relu2" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv9_2_mbox_conf_flat" out_port_id="conv9_2_mbox_conf_flat"/>
+		<IR id="209" name="conv9_2_mbox_conf_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_256_1_relu1" out_port_id="layer_256_1_bn1"/>
+		<IR id="38" name="layer_256_1_relu1" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="fc7_mbox_conf" out_port_id="fc7_mbox_conf"/>
+		<IR id="173" name="fc7_mbox_conf" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_64_1_relu2" out_port_id="layer_64_1_conv1_h"/>
+		<IR id="15" name="layer_64_1_relu2" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv9_2_mbox_conf" out_port_id="conv9_2_mbox_conf"/>
+		<IR id="205" name="conv9_2_mbox_conf" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv4_3_norm_mbox_priorbox" out_port_id="conv4_3_norm_mbox_priorbox"/>
+		<IR id="232" name="conv4_3_norm_mbox_priorbox" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_512_1_relu1" out_port_id="layer_512_1_bn1"/>
+		<IR id="65" name="layer_512_1_relu1" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv6_2_mbox_conf" out_port_id="conv6_2_mbox_conf"/>
+		<IR id="181" name="conv6_2_mbox_conf" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv4_3_norm_mbox_conf_flat" out_port_id="conv4_3_norm_mbox_conf_flat"/>
+		<IR id="169" name="conv4_3_norm_mbox_conf_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv9_2_mbox_loc" out_port_id="conv9_2_mbox_loc"/>
+		<IR id="156" name="conv9_2_mbox_loc" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="last_relu" out_port_id="fc7"/>
+		<IR id="80" name="last_relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv4_3_norm_mbox_conf" out_port_id="conv4_3_norm_mbox_conf"/>
+		<IR id="165" name="conv4_3_norm_mbox_conf" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_128_1_conv1_h" out_port_id="layer_128_1_conv1_h"/>
+		<IR id="25" name="layer_128_1_conv1_h" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv6_2_mbox_priorbox" out_port_id="conv6_2_mbox_priorbox"/>
+		<IR id="266" name="conv6_2_mbox_priorbox" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_512_1_conv2_h" out_port_id="layer_512_1_conv2_h"/>
+		<IR id="72" name="layer_512_1_conv2_h" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_256_1_scale2" out_port_id="layer_256_1_conv1"/>
+		<IR id="54" name="layer_256_1_bn2/variance/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv8_2_mbox_loc_flat" out_port_id="conv8_2_mbox_loc_flat"/>
+		<IR id="142" name="conv8_2_mbox_loc_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="fc7_mbox_loc_flat" out_port_id="fc7_mbox_loc_flat"/>
+		<IR id="88" name="fc7_mbox_loc_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv6_2_h" out_port_id="conv6_2_h"/>
+		<IR id="97" name="conv6_2_h" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv8_2_mbox_conf" out_port_id="conv8_2_mbox_conf"/>
+		<IR id="197" name="conv8_2_mbox_conf" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv7_2_mbox_conf" out_port_id="conv7_2_mbox_conf"/>
+		<IR id="189" name="conv7_2_mbox_conf" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv8_2_mbox_priorbox" out_port_id="conv8_2_mbox_priorbox"/>
+		<IR id="300" name="conv8_2_mbox_priorbox" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv9_1_h" out_port_id="conv9_1_h"/>
+		<IR id="146" name="conv9_1_h" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_64_1_scale2_h" out_port_id="layer_64_1_conv1_h"/>
+		<IR id="14" name="layer_64_1_bn2_h/variance/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv6_2_mbox_conf_flat" out_port_id="conv6_2_mbox_conf_flat"/>
+		<IR id="185" name="conv6_2_mbox_conf_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_256_1_conv1" out_port_id="layer_256_1_conv1"/>
+		<IR id="52" name="layer_256_1_conv1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_128_1_conv_expand_h" out_port_id="layer_128_1_conv_expand_h"/>
+		<IR id="32" name="layer_128_1_conv_expand_h" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="fc7_mbox_priorbox" out_port_id="fc7_mbox_priorbox"/>
+		<IR id="249" name="fc7_mbox_priorbox" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv9_2_relu" out_port_id="conv9_2_h"/>
+		<IR id="152" name="conv9_2_relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv9_1_relu" out_port_id="conv9_1_h"/>
+		<IR id="147" name="conv9_1_relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="mbox_conf" out_port_id="mbox_conf"/>
+		<IR id="210" name="mbox_conf" out_port_id="6"/>
+	</map>
+	<map>
+		<framework name="conv7_2_relu" out_port_id="conv7_2_h"/>
+		<IR id="116" name="conv7_2_relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv6_2_relu" out_port_id="conv6_2_h"/>
+		<IR id="98" name="conv6_2_relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv4_3_norm" out_port_id="conv4_3_norm"/>
+		<IR id="42" name="conv4_3_norm" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_64_1_conv2_h" out_port_id="layer_64_1_conv2_h"/>
+		<IR id="17" name="layer_64_1_conv2_h" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv7_1_relu" out_port_id="conv7_1_h"/>
+		<IR id="111" name="conv7_1_relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="layer_256_1_scale1" out_port_id="layer_256_1_bn1"/>
+		<IR id="37" name="layer_256_1_bn1/variance/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv8_2_relu" out_port_id="conv8_2_h"/>
+		<IR id="134" name="conv8_2_relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv7_1_h" out_port_id="conv7_1_h"/>
+		<IR id="110" name="conv7_1_h" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv8_2_mbox_loc" out_port_id="conv8_2_mbox_loc"/>
+		<IR id="138" name="conv8_2_mbox_loc" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_512_1_scale2_h" out_port_id="layer_512_1_conv1_h"/>
+		<IR id="69" name="layer_512_1_bn2_h/variance/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv7_2_h" out_port_id="conv7_2_h"/>
+		<IR id="115" name="conv7_2_h" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv8_2_h" out_port_id="conv8_2_h"/>
+		<IR id="133" name="conv8_2_h" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="fc7_mbox_conf_flat" out_port_id="fc7_mbox_conf_flat"/>
+		<IR id="177" name="fc7_mbox_conf_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv6_1_relu" out_port_id="conv6_1_h"/>
+		<IR id="93" name="conv6_1_relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="mbox_conf_flatten" out_port_id="mbox_conf_flatten"/>
+		<IR id="215" name="mbox_conf_flatten" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_64_1_sum" out_port_id="layer_64_1_sum"/>
+		<IR id="18" name="layer_64_1_sum" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_64_1_conv1_h" out_port_id="layer_64_1_conv1_h"/>
+		<IR id="12" name="layer_64_1_conv1_h" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_512_1_conv_expand_h" out_port_id="layer_512_1_conv_expand_h"/>
+		<IR id="74" name="layer_512_1_conv_expand_h" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv7_2_mbox_loc_flat" out_port_id="conv7_2_mbox_loc_flat"/>
+		<IR id="124" name="conv7_2_mbox_loc_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_512_1_conv1_h" out_port_id="layer_512_1_conv1_h"/>
+		<IR id="67" name="layer_512_1_conv1_h" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv4_3_norm_mbox_loc_flat" out_port_id="conv4_3_norm_mbox_loc_flat"/>
+		<IR id="50" name="conv4_3_norm_mbox_loc_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_128_1_scale2" out_port_id="layer_128_1_conv1_h"/>
+		<IR id="27" name="layer_128_1_bn2/variance/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_512_1_sum" out_port_id="layer_512_1_sum"/>
+		<IR id="75" name="layer_512_1_sum" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="mbox_priorbox" out_port_id="mbox_priorbox"/>
+		<IR id="318" name="mbox_priorbox" out_port_id="6"/>
+	</map>
+	<map>
+		<framework name="layer_128_1_sum" out_port_id="layer_128_1_sum"/>
+		<IR id="33" name="layer_128_1_sum" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv6_1_h" out_port_id="conv6_1_h"/>
+		<IR id="92" name="conv6_1_h" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="detection_out" out_port_id="0"/>
+		<IR id="319" name="detection_out" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv8_1_relu" out_port_id="conv8_1_h"/>
+		<IR id="129" name="conv8_1_relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv4_3_norm_mbox_loc" out_port_id="conv4_3_norm_mbox_loc"/>
+		<IR id="46" name="conv4_3_norm_mbox_loc" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv1_scale_h" out_port_id="conv1_h"/>
+		<IR id="8" name="conv1_h/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv8_1_h" out_port_id="conv8_1_h"/>
+		<IR id="128" name="conv8_1_h" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv1_pool" out_port_id="conv1_pool"/>
+		<IR id="10" name="conv1_pool" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv9_2_mbox_loc_flat" out_port_id="conv9_2_mbox_loc_flat"/>
+		<IR id="160" name="conv9_2_mbox_loc_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv8_2_mbox_conf_flat" out_port_id="conv8_2_mbox_conf_flat"/>
+		<IR id="201" name="conv8_2_mbox_conf_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="layer_512_1_relu2" out_port_id="layer_512_1_conv1_h"/>
+		<IR id="70" name="layer_512_1_relu2" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv6_2_mbox_loc_flat" out_port_id="conv6_2_mbox_loc_flat"/>
+		<IR id="106" name="conv6_2_mbox_loc_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="data_scale" out_port_id="data_bn"/>
+		<IR id="4" name="data_bn/variance/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="mbox_conf_reshape" out_port_id="mbox_conf_reshape"/>
+		<IR id="212" name="mbox_conf_reshape" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="fc7_mbox_loc" out_port_id="fc7_mbox_loc"/>
+		<IR id="84" name="fc7_mbox_loc" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv1_relu" out_port_id="conv1_h"/>
+		<IR id="9" name="conv1_relu" out_port_id="1"/>
+	</map>
+</mapping>
